@@ -1,3 +1,5 @@
+ifneq ($(QCPATH),)
+
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
@@ -165,7 +167,7 @@ LOCAL_SRC_FILES               += src/omx_swvdec_utils.cpp
 include $(BUILD_SHARED_LIBRARY)
 endif
 endif
-
+endif
 # ---------------------------------------------------------------------------------
 #                END
 # ---------------------------------------------------------------------------------
